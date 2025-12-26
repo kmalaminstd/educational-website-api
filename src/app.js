@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express")
 const cors = require("cors")
 const { PORT } = require("./config/app.config")
@@ -7,6 +9,8 @@ const userLogin = require("./auth/userLogin")
 const path = require("path")
 const cookieParser = require("cookie-parser")
 const adminRouter = require('./routes/adminRoutes')
+
+
 
 const userRoutes = require('./routes/userRoutes')
 const userUploadRoutes = require("./routes/userUploadRoutes")
@@ -42,6 +46,7 @@ app.use('/public/courseImage', express.static(path.join(__dirname, '../public/co
 db.connect((err) => {
     if(err){
       console.log(err)
+      return "database crashed"
     }
     console.log("Database connected")
 })
