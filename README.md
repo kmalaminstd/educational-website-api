@@ -103,7 +103,6 @@ EducationWebsite is a full-fledged **Online Learning Management System (LMS)** t
 | **File Upload** | Multer |
 | **Email Service** | Nodemailer |
 | **Excel Generation** | ExcelJS |
-| **HTTP Client** | Axios (implied) |
 | **Environment Config** | dotenv |
 | **Dev Tool** | Nodemon |
 | **CORS** | Enabled for local frontend |
